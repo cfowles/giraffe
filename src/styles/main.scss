@@ -73,7 +73,6 @@ body {
   @import 'components/donate-form-v3';
   @import 'components/donate-terms';
   @import 'components/donate-terms-v3';
-  @import 'components/donate-terms-nocolumn';
   @import 'components/donate-confirm';
 
 }
@@ -81,7 +80,6 @@ body {
 // PAGE STYLES
 @import 'pages/petition';
 @import 'pages/donate';
-@import 'pages/donate-v1';
 @import 'pages/donate-v3';
 @import 'pages/donate-quickpay-v3';
 @import 'pages/donate-confirm';
