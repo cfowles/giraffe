@@ -1,9 +1,4 @@
 @font-face {
-  font-family: 'Roboto Condensed';
-  src: url('../fonts/RobotoCondensed-Regular.ttf');
-}
-
-@font-face {
   font-family: 'Roboto Condensed Bold';
   src: url('../fonts/RobotoCondensed-Bold.ttf');
   font-weight: bolder;
@@ -29,7 +24,6 @@ $fonts: (
   roboto: ('Roboto Regular', sans-serif),
   roboto-medium: ('Roboto Medium', sans-serif),
   roboto-bold: ('Roboto Bold', sans-serif),
-  roboto-condensed: ('Roboto Condensed', sans-serif),
   roboto-condensed-bold: ('Roboto Condensed Bold', sans-serif),
 );
 
