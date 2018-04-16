@@ -97,21 +97,21 @@
                 {% block heading %}Buttons{% endblock %}
                 {% block content %}
                     <div>
-                        <button class="btn azure">Simple Button</button>
-                        <button class="btn azure">Button With Icon <svg><use xlink:href="#caret-right" /></svg></button>
+                        <button class="btn btn-azure">Simple Button</button>
+                        <button class="btn btn-azure">Button With Icon <svg><use xlink:href="#caret-right" /></svg></button>
                         <button class="btn" disabled >Disabled Button</button>
-                        <a class="btn white azure" href="#">Link button</a>
+                        <a class="btn white btn-azure" href="#">Link button</a>
                         <br><br>
                         <h3>Available Buttons:</h3>
                         <br>
-                        <p><button class="btn azure">Azure</button> <code>.btn .azure</code></p><br>
+                        <p><button class="btn btn-azure">Azure</button> <code>.btn btn.azure</code></p><br>
                         <p><button class="btn transparent">Transparent</button> <code>.btn .transparent</code></p><br>
                         {# <p><button class="mo-btn styleguide__button--transparent-dark">Transparent-Dark</button> <code class="SASS">@include mo-btn--transparent-dark</code></p><br> #}
                         <p><div style="background-color: #ddd"><button class="btn transparent-light">Transparent-Light</button> <code>.btn .transparent-light</code></div></p><br>
                     </div>
                 {% endblock %}
-                {% block markup %}<button class="btn azure">Azure</button>
-<a class="btn white azure" href="#">Link button</a>{% endblock %}
+                {% block markup %}<button class="btn btn-azure">Azure</button>
+<a class="btn white btn-azure" href="#">Link button</a>{% endblock %}
             {% endembed %}
 
             {# ICONS #}
