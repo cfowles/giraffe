@@ -4,6 +4,7 @@ class HomeHero {
     this.$element = $($element);
     this.$imageCarousel = this.$element.find('.home-hero__image-carousel');
     this.$contentCarousel = this.$element.find('.home-hero__content__carousel');
+    this.$iframes = [];
 
     this.bindCarousels();
   }
@@ -16,6 +17,7 @@ class HomeHero {
 
             _this.$contentCarousel.parent().addClass('home-hero-bg-red');
         }
+
     });
 
     let showCarouselChrome = true;
@@ -38,9 +40,33 @@ class HomeHero {
            _this.$contentCarousel.parent().addClass('home-hero-bg-red');
         }
     });
+
+    this.$imageCarousel.on('ready.flickity', function() {
+
+        console.log('Image carousel ready');
+
+      // Load YouTube's IFrame API for embedded players
+
+      var tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      
+      function onYouTubeIframeAPIReady() {
+          console.log('beep');
+      }
+
+
+    });
+
     this.$imageCarousel.flickity({
       sync: this.$contentCarousel[0],
       wrapAround: true,
+    })
+    .on('change.flickity', function() {
+
+        console.log(_this.$iframes);
+
     });
   }
 
