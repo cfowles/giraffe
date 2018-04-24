@@ -6,15 +6,15 @@ form {
 
   .input-block {
     position: relative;
-    color: $light-gray;
+    color: $slate-gray;
+    font-size: 1.3rem;
     @include respond((
-      font-size: 14px null 16px,
-      line-height: 20px,
+      line-height: 1.4rem,
     ));
 
     &:not(:first-of-type), &.override-collapse {
       @include respond((
-        margin-top: 30px,
+        margin-top: 2.25rem,
       ));
     }
 
@@ -33,7 +33,7 @@ form {
       box-shadow: none;
       @include respond((
         width: 100%,
-        height: 50px null 30px,
+        height: 3.5rem null 3.5rem,
         border: 0,
         border-bottom: (2px solid transparentize($black, 1-0.42)) null,
       ));
@@ -69,10 +69,10 @@ form {
 
     label {
       position: absolute;
-      top: -1.5625rem;
+      top: -2.4rem;
       left: 0;
       font-weight: normal;
-      font-size: .95rem;
+      font-size: 1.1rem;
       display: flex;
       align-items: center;
       height: 100%;
@@ -124,7 +124,7 @@ form {
     .select-caret {
       position: absolute;
       display: block;
-      fill: $light-gray;
+      fill: $slate-gray;
       @include respond((
         top: 50%,
         transform: translateY(-50%),
@@ -145,7 +145,7 @@ form {
         ));
 
         & ~ label {
-          top: -22px;
+          top: -1.375rem;
           left: 0;
           height: auto;
         }
@@ -168,8 +168,8 @@ form {
     opacity: .54;
     @include font(roboto);
     @include respond((
-      font-size: 13px,
-      line-height: 20px,
+      font-size: .9rem,
+      line-height: 1.3rem,
     ));
   }
 
@@ -190,10 +190,10 @@ form {
     }
     &.label-above {
       display:block;
-      color: $light-gray;
-      font-size: .95rem;
+      color: $slate-gray;
+      font-size: 1rem;
       label {
-        color: $light-gray;
+        color: $slate-gray;
         display:block;
         margin:0 0 0.5em 0;
         position:relative;
